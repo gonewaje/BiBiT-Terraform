@@ -27,7 +27,7 @@ resource "google_compute_instance" "bibit-compute-instance" {
     }
   }
 
-  tags = ["${var.instance_name_header}-${var.compute_name}", "terraform"]
+  tags = ["${var.instance_name_header}-${var.compute_name}", "${var.additional_tags}", "terraform"]
 
   allow_stopping_for_update = true
 

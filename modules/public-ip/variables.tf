@@ -73,3 +73,7 @@ variable "service_type" {
 variable "skip_alert" {
     default = "false"
 }
+
+variable "additional_tags" {
+  default = ""
+}
